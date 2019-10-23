@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>test_my_site | 我的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="test_my_site | 我的博客">
+  <title>mongodb使用笔记 | 我的博客</title>
+  <meta name="keywords" content=" mongodb ">
+  <meta name="description" content="mongodb使用笔记 | 我的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="核心是这个mybatis的拦截器 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061import lombok.extern.slf4j.Slf4j;import org.apache.ibatis.executor.Ex">
 <meta name="keywords" content="mybatis,多数据源">
@@ -176,19 +176,25 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-test-my-site" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-mongodb使用笔记" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">test_my_site</h1>
+        <h1 class="article-title">mongodb使用笔记</h1>
     
     <div class="article-meta">
         
         
         
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color3">mongodb</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-10-22 22:35:38'>2019-10-22 22:35</time>
+        创建时间:<time class="date" title='更新时间: 2019-10-23 20:25:18'>2019-10-23 19:53</time>
         
     </div>
     <div class="article-meta">
@@ -226,7 +232,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <ul>
+<li>显示所有数据库：show dbs;</li>
+<li>使用某个数据库：use admin;</li>
+<li>显示所有集合：show collections;</li>
+<li>查询某个集合：db.conn.find();</li>
+<li>条件查询(eq)：db.conn.find({“column”:”value”});</li>
+<li>条件查询(gt)：db.conn.find({“column”:{$gt:value}});</li>
+<li>limit用法：db.conn.find().limit(10);</li>
+<li>分页查询：db.conn.find().limit(10).skip(20);</li>
+</ul>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 whowhopipi@163.com </span>
     </div>
@@ -235,12 +251,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>test_my_site</p>
+    <p><span class="copy-title">文章标题:</span>mongodb使用笔记</p>
     
     <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="whowhopipi">whowhopipi</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-10-22, 22:35:38</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-22, 22:35:38</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/22/test-my-site/" title="test_my_site">http://yoursite.com/2019/10/22/test-my-site/</a>
+    <p><span class="copy-title">发布时间:</span>2019-10-23, 19:53:49</p>
+    <p><span class="copy-title">最后更新:</span>2019-10-23, 20:25:18</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/10/23/mongodb%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" title="mongodb使用笔记">http://yoursite.com/2019/10/23/mongodb%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
